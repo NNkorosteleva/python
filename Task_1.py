@@ -3,7 +3,7 @@
 """
 for i in range(2, 10):
     n = 0
-    for j in range(2, 99):
+    for j in range(2, 100):
         if j % i == 0:
             n += 1
     print(f'Числу {i} кратны {n} чисел')
