@@ -5,8 +5,10 @@
 import random
 
 a = [random.randint(-50, 50) for i in range(20)]
-min1, min2 = a[0], a[0]
-for i in a:
+min1, min2 = a[0], a[1]
+if min2 < min1:
+    min1, min2 = min2, min1
+for i in a[2:]:
     if i <= min1:
         min1, min2 = i, min1
     elif min1 < i < min2:
